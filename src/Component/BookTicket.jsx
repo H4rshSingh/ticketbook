@@ -86,7 +86,7 @@ const BookTicket = (props) => {
 
     return (
         <>
-            <div className=" flex justify-center items-center">
+            <div className=" flex justify-center items-center mt-8">
                 <div className=" mx-4 w-full max-w-xl m-auto">
                     <div className={`${props.mode==='dark'? 'text-white' : 'text-black'} text-center text-4xl font-bold mb-4 `}>Book Tickets</div>
                     <form className={`${props.mode==='dark'? 'bg-[#322F3D] text-white' : 'bg-white text-gray-700'} shadow-md rounded p-3 md:p-6 mb-4`}  onSubmit={handleSubmit} autoComplete="on">

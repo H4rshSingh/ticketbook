@@ -47,7 +47,7 @@ const AdminTicket = (props) => {
     }
 
     return (
-        <div>
+        <div className='mt-8'>
             <h1 className={`${props.mode === 'dark' ? 'text-white' : 'text-black'} text-center text-2xl md:text-4xl font-serif mb-4`}>Tickets Details</h1>
             
             <div className="relative overflow-x-auto mx-2">

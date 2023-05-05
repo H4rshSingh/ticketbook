@@ -11,6 +11,7 @@ const Tickets = (props) => {
 
 
     const host = "https://ticketbook-server-production.up.railway.app"
+    // const host = "http://localhost:5000"
     const getTicket = async () => {
         const response = await fetch(`${host}/api/ticket/fetchalltickets`, {
             method: 'GET',

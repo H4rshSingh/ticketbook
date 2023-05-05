@@ -39,7 +39,7 @@ const Login = (props) => {
   }
 
   return (
-    <div className=' flex justify-center items-center'>
+    <div className=' flex justify-center items-center mt-8'>
       <div className="w-full mx-4 max-w-md m-auto">
         <div className={`${props.mode==='dark'? 'text-white' : 'text-black'} text-2xl mb-4 font-bold text-center flex justify-center items-center`}>
           <span className='pl-2 mr-4 text-2xl md:text-4xl'>Login to</span>
