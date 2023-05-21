@@ -136,8 +136,8 @@ const Tickets = (props) => {
             <div className='flex flex-wrap justify-center mt-4 break-words'>
                 <div className='text-gray-600'>{ticket.length === 0 ? 'You have not booked any ticket yet' : ''}</div>
 
-                {ticket.slice(0).reverse().map((ticket) => {
-                    return <OneTicket key={ticket._id} showAlert={props.showAlert} handleDelete={handleDelete} viewQR={viewQR} mode={props.mode} ticket={ticket} />;
+                {ticket.slice(0).reverse().map((ticket, index) => {
+                    return <OneTicket key={ticket._id} index={index} showAlert={props.showAlert} handleDelete={handleDelete} viewQR={viewQR} mode={props.mode} ticket={ticket} />;
                 })}
             </div>
 
