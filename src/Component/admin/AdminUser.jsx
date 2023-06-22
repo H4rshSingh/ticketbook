@@ -5,7 +5,8 @@ import { Delete } from '@mui/icons-material';
 import Spinner from '../Spinner';
 
 
-const host = "https://ticketbook-server-production.up.railway.app"
+const host = "https://ticketbook-demr.onrender.com";
+// const host = "http://localhost:5000"
 
 const AdminUser = (props) => {
     const [loading, setLoading] = useState(true)

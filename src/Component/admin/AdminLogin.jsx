@@ -5,7 +5,8 @@ const AdminLogin = (props) => {
   const [credentials, setCredentials] = useState({ email: '', password: '' });
   let navigate = useNavigate();
 
-  const host = "https://ticketbook-server-production.up.railway.app";
+  const host = "https://ticketbook-demr.onrender.com";
+  // const host = "http://localhost:5000"
   async function handleLogin(e) {
     e.preventDefault();
     props.setProgress(30);
