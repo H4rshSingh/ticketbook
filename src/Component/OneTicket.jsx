@@ -4,7 +4,7 @@ import { Check, Close } from '@mui/icons-material';
 
 
 const OneTicket = (props) => {
-  var dateBooking = new Date(Number(props.ticket.date));
+  // var dateBooking = new Date(Number(props.ticket.date));
   var dateVisited = new Date(Number(props.ticket.visitedOn));
   return (
     <div>
@@ -20,7 +20,8 @@ const OneTicket = (props) => {
           <p>Number of Tiket : {props.ticket.numberOfTicket}</p>
           <code className={`${props.mode === 'dark' ? 'text-gray-200' : 'text-gray-500'} text-sm`}>Ticket Id : {props.ticket._id}</code>
 
-          <small className='block'>Booked at : {dateBooking.toLocaleString()}</small>
+          {/* <small className='block'>Booked at : {dateBooking.toLocaleString()}</small> */}
+          <small className='block'>Booked at : {props.ticket.date}</small>
           <div className='flex items-center gap-2 justify-between my-2'>
             <p>Visited : {props.ticket.visited ? <Check className='text-green-500' /> : <Close className='text-red-500' />}</p>
             {
