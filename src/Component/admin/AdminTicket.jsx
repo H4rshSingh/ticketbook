@@ -9,7 +9,7 @@ const AdminTicket = (props) => {
     const [ticket, setTicket] = useState([]);
     const [loading, setLoading] = useState(true)
 
-    const host = "https://ticketbook-demr.onrender.com";
+    const host = "https://ticketbook-server.vercel.app";
     // const host = "http://localhost:5000"
     const getAllTicket = async () => {
         const response = await fetch(`${host}/admin/getalltickets`, {

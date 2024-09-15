@@ -14,7 +14,7 @@ function Navbar(props) {
     }
 
     const [userDetail, setUserDetail] = useState([])
-    const host = "https://ticketbook-demr.onrender.com";
+    const host = "https://ticketbook-server.vercel.app";
     // const host = "http://localhost:5000"
     const getUser = async () => {
         const response = await fetch(`${host}/api/auth/getuser`, {

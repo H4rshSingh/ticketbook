@@ -10,7 +10,7 @@ const Tickets = (props) => {
     const [ticket, setTicket] = useState([]);
 
 
-    const host = "https://ticketbook-demr.onrender.com";
+    const host = "https://ticketbook-server.vercel.app";
     // const host = "http://localhost:5000"
     const getTicket = async () => {
         const response = await fetch(`${host}/api/ticket/fetchalltickets`, {

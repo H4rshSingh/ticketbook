@@ -5,7 +5,7 @@ const AdminLogin = (props) => {
   const [credentials, setCredentials] = useState({ email: '', password: '' });
   let navigate = useNavigate();
 
-  const host = "https://ticketbook-demr.onrender.com";
+  const host = "https://ticketbook-server.vercel.app";
   // const host = "http://localhost:5000"
   async function handleLogin(e) {
     e.preventDefault();

@@ -17,7 +17,7 @@ const BookTicket = (props) => {
     let handleSubmit = async (e) => {
         e.preventDefault();
         try {
-            const host = "https://ticketbook-demr.onrender.com";
+            const host = "https://sticketbook-server.vercel.app/";
             // const host = "http://localhost:5000"
             const res = await fetch(`${host}/api/ticket/bookticket`, {
                 method: "POST",
